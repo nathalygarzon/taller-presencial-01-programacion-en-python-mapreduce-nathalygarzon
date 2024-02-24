@@ -124,7 +124,6 @@ def create_marker(output_directory):
     with open(output_directory + "/_SUCCESS", "w") as file:
         file.write("")
 
-
 #
 # Escriba la función job, la cual orquesta las funciones anteriores.
 #
@@ -136,9 +135,6 @@ def job(input_directory, output_directory):
     create_output_directory(output_directory)
     save_output(output_directory, sequence)
     create_marker(output_directory)
-
-
-
 
 
 if __name__ == "__main__":
